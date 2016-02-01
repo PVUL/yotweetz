@@ -1,0 +1,13 @@
+html
+  head
+    title Yotweetz!
+    link(rel="stylesheet", href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+  body
+    div.container.text-center
+      div.row
+        div.col-xs-4.col-xs-offset-4
+          h1 
+            a(href='/') Yotweetz!
+          form(action="get_tweets", method="POST")
+            input.form-control.text-center(type="text", name="handle", placeholder="@yohandle")
+            input.form-control.btn.btn-primary(type="submit", value="Get Tweets")

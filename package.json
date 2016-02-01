@@ -1,0 +1,27 @@
+{
+  "name": "yotweetz",
+  "version": "1.0.0",
+  "description": "use node and express to display user tweets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PVUL/yotweetz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PVUL/yotweetz/issues"
+  },
+  "homepage": "https://github.com/PVUL/yotweetz#readme",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "dotenv": "^2.0.0",
+    "express": "^4.13.4",
+    "jade": "^1.11.0",
+    "request": "^2.69.0",
+    "twitter": "^1.2.5"
+  }
+}
