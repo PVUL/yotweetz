@@ -1,4 +1,3 @@
-require('dotenv').config();
 var Twitter = require('twitter');
 
 module.exports = function(res, screen_name) {

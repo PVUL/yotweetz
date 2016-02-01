@@ -1,6 +1,8 @@
+require('dotenv').config();
+
 var express = require('express');
 var bodyParser = require('body-parser');
-var tweetList = require ('./tweets')
+var tweetList = require ('./tweets');
 
 var app = express();
 
@@ -16,6 +18,5 @@ app.post('/get_tweets', function(req, res) {
   var tweets = tweetList(res, screen_name);
 });
 
-var server = app.listen(3000, function() {
-  console.log('Our application is running at http://localhost:3000');
-});
+var port = process.env.PORT || 3000;
+app.listen(port);
