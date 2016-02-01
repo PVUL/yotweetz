@@ -15,7 +15,7 @@ module.exports = function(res, screen_name) {
 
   function gotData(error, timeline_tweets, response) {
     if (error)
-      throw error;
+      res.redirect('/')
 
     res.render('list', { tweets: timeline_tweets });
   };
